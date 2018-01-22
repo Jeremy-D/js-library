@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Library</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Latest compiled and minified CSS bootstrap-->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+</head>
+<body>
+	<div class="container"></div>
+	<button id="myBtn">Add Book</button>
+	<!-- The Modal -->
+		<div id="myModal" class="modal">
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
+				<form id='myForm'>
+		    	<label>Title</label>
+		    	<input type="text" name="title" value='' onchange="handleInputChange(event)">
+		    	<br>
+		   		<label>Author</label>
+		    	<input type="text" name="author" value='' onchange="handleInputChange(event)">
+		    	<br>
+		   		<label>Pages</label>
+		   		<input type="text" name="pages" value='' onchange="handleInputChange(event)">
+		   		<br>
+		   		<label>Have you read this book?</label>
+		   		<div class="bool">
+			    	<input type="radio" name="read" checked="true" value="true">Yes<br>
+			    	<input type="radio" name="read" value="false">No<br>
+			    </div>
+			    <br>
+		   		<input type="submit" id='submitBtn'>
+		    </form>
+		  </div>
+
+		</div>
+	<!-- jQuery -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 Bootstrap
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<script type="text/javascript" src="library.js"></script>
+</body>
+</html>
